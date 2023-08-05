@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow');
+
+.full-width {width: 100%;}
+
+.navigation-bar {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: #232323;
+    color: white;
+} 
+
+.navigation-bar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navigation-bar li {
+    margin: auto 30px;
+}
+
+.navigation-bar h1 {
+    display: inline-flex;
+    color: white;
+    position: relative;
+    transform: translate(0%, -25%);
+    font-family: "Barlow";
+}
+
+.navigation-bar img {
+    height: 48px;
+    width: 48px;
+    margin-right: 10px;
+    display: inline-flex;
+}
+
+.navigation-bar a {
+    text-decoration: none;
+    transition: .2s;
+    color: white;
+
+    font-family: "Barlow";
+}
+
+.navigation-bar a:hover {
+    letter-spacing: 1px;
+    transition: .2s;
+}
+
+.navigation-bar i {
+    margin-right: 5px;
+}
+
+.center-container {
+    width: 100%;
+    background-color: white;
+    height: auto;
+}
+
+
+.center-container h1 {
+    margin: 250px auto;
+    text-align: center;
+    color: #303030;
+    font-family: "Barlow";
+    justify-content: center;
+
+}
+
+.center-container p {
+    margin: -240px auto;
+    font-size: 20px;
+    text-align: center;
+    color: #303030;
+    font-family: "Barlow";
+    justify-content: center;
+}
+
+.center-container ul {
+    justify-content: center;
+    display: flex;
+    list-style-type: none;
+    margin: 350px auto;
+}
+
+.center-container li {
+    transition: .2s;
+    margin: auto 50px;
+}
+
+.center-container a {
+    text-decoration: none;
+    transition: .2s;
+    color: #232323;
+    font-family: "Barlow";
+}
+
+.center-container a:hover {
+    color: #3f5ad1;
+    transition: .2s;
+}
+
+.center-container i {
+    margin: -3px auto;
+    margin-right: 5px;
+}

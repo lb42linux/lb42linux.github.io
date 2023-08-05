@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow');
+
+.about-us {
+    width: 100%;
+    font-family: "Barlow";
+}
+
+.about-us h1 {
+    position: relative;
+    margin: 20px auto 0px;
+    text-align: center;
+}
+
+.about-us p {
+    position: relative;
+    text-align: center;
+}
+
+.about-us h2 {
+    position: relative;
+    text-align: center;
+}
+
+.about-us ul {
+    list-style-type: none;
+    justify-content: space-evenly;
+    display: flex;
+    margin: 20px auto;
+}
+
+.about-us li {
+    margin: auto 15px;
+}
+
+#mert {
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#mert h3 {
+    text-align: left;
+}
+
+#mert p {
+    text-align: left;
+}
+
+#mert ul {
+    list-style-type: none;
+    justify-content: space-evenly;
+    margin: 10px auto;
+}
+
+#mert li {
+    display: inline-flex;
+}
+
+#mert a {
+    margin-left: 10px;
+    text-decoration: none;
+    transition: .3s;
+    color: #303030;
+}
+
+#mert a:hover {
+    color: #3f5ad1;
+    transition: .3s;
+}

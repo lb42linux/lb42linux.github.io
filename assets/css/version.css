@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow');
+
+.version-cache {
+    float: left;
+    width: 270px;
+    position: sticky;
+    height: 100%;
+    margin-left: 30px;
+    font-family: "Barlow";
+    padding: 10px;
+    /* overflow-y: scroll; geçici olarak kapatıldı */ 
+}
+
+.version-cache h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.version-cache ul {
+    list-style-type: none;
+    justify-content: center;
+    display: grid;
+    margin: auto 20px;
+}
+
+.a {
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    left: 19%;
+    margin-left: -3px;
+    border-left: 6px solid #232323;
+}
+
+.version-cache li {
+    margin: auto 5px 7px;
+}
+
+.version-cache a {
+    text-decoration: none;
+    transition: .2s;
+    color: #303030;
+    width: 100%;
+}
+
+.version-cache a:hover  {
+    color: #3f5ad1;
+    transition: .2s;
+}
+
+/*
+
+    Versions - Mixeration
+
+*/
+
+#lb42-asia-1 {
+    font-family: "Barlow";
+    justify-content: center;
+    display: grid;
+    position: relative;
+    margin-top: 70px;
+    color: #303030;
+}
+
+#lb42-asia-1 h1 {
+    text-align: center;
+
+}
+
+#lb42-asia-1 h3 {
+    display: block;
+    text-align: center;
+}
+
+#lb42-asia-1 ul {
+    margin-left: 40px;
+    list-style-type: none;
+}
+
+#lb42-asia-1 p {
+    font-family: "Barlow";
+    display: inline-flex;
+    text-align: center;
+    font-size: 15px;
+    width: 900px;
+}
+
+#lb42-asia-1 i {
+    display: inline-flex;
+    overflow: visible;
+    color: #3f5ad1;
+    margin-right: 10px;
+}
+
+#lb42-asia-1 a {
+    padding: 10px;
+    width: 170px;
+    justify-content: center;
+    display: grid;
+    margin: 50px auto;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 50px;
+    color: white;
+    transition: .3s;
+    background-color: #3f5ad1;
+}
+
+#lb42-asia-1 a:hover {
+    color:#3f5ad1;
+    background-color: white;
+    box-shadow: 0px 0px 10px 2px #3f5ad1;
+    transition: .3s;
+}
+
+#docs ul {
+    justify-content: space-evenly;
+    display: flex;
+    list-style-type: none;
+}
