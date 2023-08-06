@@ -1,15 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow');
-
+/* Diğer CSS kodları burada olsun */
 
 .features {
     font-family: "Barlow";
     margin: 40px auto;
     max-width: 600px;
     min-height: 500px; 
-    overflow-y: scroll; 
+    overflow-y: auto; /* Değişiklik: Mobil cihazda kaydırma çubuğunu kaldır ve gerektiğinde görünür yap */
 }
-
-
 
 .features h1 {
     text-align: center;
@@ -50,7 +47,7 @@
 @media (max-width: 600px) {
     .features {
         margin: 20px auto;
-        height:600px;
+        height: auto; /* Değişiklik: Yükseklik otomatik olarak ayarlanacak */
     }
 
     .features h1 {
