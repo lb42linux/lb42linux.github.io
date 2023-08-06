@@ -50,6 +50,7 @@
 @media (max-width: 600px) {
     .features {
         margin: 20px auto;
+        height:600px;
     }
 
     .features h1 {
