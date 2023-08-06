@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous">
     <link rel="icon" href="assets/images/favicon.png">
-    <title>Features - LB42 OS</title>
+    <title>Özellikler - LB42 OS</title>
     <style>
         /* Reset some default styles */
         body, h1, h2, p, ul, li {
@@ -63,8 +63,6 @@
             text-align: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-      
-
         
         .feature-item h1 {
             margin-bottom: 10px;
@@ -94,6 +92,13 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        /* Additional style for centering the features */
+        @media (max-width: 1200px) {
+            .features {
+                justify-content: center;
+            }
+        }
     </style>
 </head>
 
@@ -116,19 +121,9 @@
     </header>
 
     <div class="features">
-        <div class="feature-item" style="background-color: #3498db;">
-            <h1>Kolay Kurulum</h1>
-            <p>Yapılandırılmış Calamares ile tam anlamıyla grafik arayüzlü kolay, temiz ve rahat bir kurulum gerçekleştirebilirsiniz!</p>
-        </div>
-        
         <div class="feature-item" style="background-color: #2ecc71;">
             <h1>Ayarlar Arayüzleri</h1>
             <p>Arch ve XFCE Arayüzünde bulunmayan hesap oluşturma, hesap silme, parola değiştirme ve sistem güncelleme gibi ayarları kolayca yapabileceksiniz!</p>
-        </div>
-        
-        <div class="feature-item" style="background-color: #9b59b6;">
-            <h1>Performans</h1>
-            <p>Bazı Kernel yapılandırmalarımızla ve XFCE hafifliğini baz alarak olabildiğince performanslı bir deneyim yaşayabileceksiniz. Eski cihazlarda bile zorlanmadan işlem sürdürebilirliği büyük olasılıkla sağlanacaktır.</p>
         </div>
         
         <div class="feature-item" style="background-color: #e74c3c;">
@@ -137,7 +132,16 @@
         </div>
     </div>
 
+    <div class="feature-item" style="background-color: #3498db;">
+        <h1>Kolay Kurulum</h1>
+        <p>Yapılandırılmış Calamares ile tam anlamıyla grafik arayüzlü kolay, temiz ve rahat bir kurulum gerçekleştirebilirsiniz!</p>
+    </div>
+        
+    <div class="feature-item" style="background-color: #9b59b6;">
+        <h1>Performans</h1>
+        <p>Bazı Kernel yapılandırmalarımızla ve XFCE hafifliğini baz alarak olabildiğince performanslı bir deneyim yaşayabileceksiniz. Eski cihazlarda bile zorlanmadan işlem sürdürebilirliği büyük olasılıkla sağlanacaktır.</p>
+    </div>
+
     <script src="https://kit.fontawesome.com/55460c171b.js" crossorigin="anonymous"></script>
 </body>
 </html>
-
