@@ -1,14 +1,14 @@
+/* Orta boyut ve büyük boyut cihazlar için ortak stiller */
 @import url('https://fonts.googleapis.com/css?family=Barlow');
 
-.full-width {width: 100%;}
-
+/* Navigasyon Çubuğu */
 .navigation-bar {
     width: 100%;
     height: auto;
     padding: 20px;
     background-color: #232323;
     color: white;
-} 
+}
 
 .navigation-bar ul {
     list-style-type: none;
@@ -17,7 +17,7 @@
 }
 
 .navigation-bar li {
-    margin: auto 30px;
+    margin: auto 15px; /* Mobil için kenar boşluğunu azaltın */
 }
 
 .navigation-bar h1 {
@@ -39,7 +39,6 @@
     text-decoration: none;
     transition: .2s;
     color: white;
-
     font-family: "Barlow";
 }
 
@@ -58,35 +57,31 @@
     height: auto;
 }
 
-
 .center-container h1 {
-    margin: 250px auto;
+    margin: 50px auto; /* Mobil için kenar boşluğunu azaltın */
     text-align: center;
     color: #303030;
     font-family: "Barlow";
-    justify-content: center;
-
 }
 
 .center-container p {
-    margin: -240px auto;
+    margin: 0 auto; /* Mobil için negatif kenar boşluğunu kaldırın */
     font-size: 20px;
     text-align: center;
     color: #303030;
     font-family: "Barlow";
-    justify-content: center;
 }
 
 .center-container ul {
     justify-content: center;
     display: flex;
     list-style-type: none;
-    margin: 350px auto;
+    margin: 50px auto; /* Mobil için kenar boşluğunu azaltın */
 }
 
 .center-container li {
     transition: .2s;
-    margin: auto 50px;
+    margin: auto 15px; /* Mobil için kenar boşluğunu azaltın */
 }
 
 .center-container a {
@@ -104,4 +99,32 @@
 .center-container i {
     margin: -3px auto;
     margin-right: 5px;
+}
+
+/* Mobil için özel stiller */
+@media only screen and (max-width: 768px) {
+    .navigation-bar ul {
+        flex-direction: column;
+    }
+
+    .navigation-bar li {
+        margin: 10px 0;
+    }
+
+    .center-container h1 {
+        margin: 30px auto; /* Mobil için kenar boşluğunu ayarlayın */
+        font-size: 24px; /* Mobil için yazı tipi boyutunu ayarlayın */
+    }
+
+    .center-container p {
+        font-size: 16px; /* Mobil için yazı tipi boyutunu ayarlayın */
+    }
+
+    .center-container ul {
+        margin: 30px auto; /* Mobil için kenar boşluğunu ayarlayın */
+    }
+
+    .center-container li {
+        margin: 10px 0;
+    }
 }
