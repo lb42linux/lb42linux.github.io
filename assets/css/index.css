@@ -5,7 +5,7 @@
 .navigation-bar {
     width: 100%;
     height: auto;
-    padding: 20px;
+    padding: 10px 20px; /* Daha az yatay padding */
     background-color: #232323;
     color: white;
 }
@@ -29,8 +29,8 @@
 }
 
 .navigation-bar img {
-    height: 48px;
-    width: 48px;
+    height: 40px; /* Daha küçük görüntü boyutları */
+    width: 40px;
     margin-right: 10px;
     display: inline-flex;
 }
@@ -58,7 +58,7 @@
 }
 
 .center-container h1 {
-    margin: 50px auto; /* Mobil için kenar boşluğunu azaltın */
+    margin: 30px auto; /* Mobil için kenar boşluğunu artırın */
     text-align: center;
     color: #303030;
     font-family: "Barlow";
@@ -76,7 +76,7 @@
     justify-content: center;
     display: flex;
     list-style-type: none;
-    margin: 50px auto; /* Mobil için kenar boşluğunu azaltın */
+    margin: 30px auto; /* Mobil için kenar boşluğunu artırın */
 }
 
 .center-container li {
@@ -112,7 +112,7 @@
     }
 
     .center-container h1 {
-        margin: 30px auto; /* Mobil için kenar boşluğunu ayarlayın */
+        margin: 20px auto; /* Mobil için kenar boşluğunu artırın */
         font-size: 24px; /* Mobil için yazı tipi boyutunu ayarlayın */
     }
 
@@ -121,7 +121,7 @@
     }
 
     .center-container ul {
-        margin: 30px auto; /* Mobil için kenar boşluğunu ayarlayın */
+        margin: 20px auto; /* Mobil için kenar boşluğunu artırın */
     }
 
     .center-container li {
