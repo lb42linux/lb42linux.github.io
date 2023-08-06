@@ -2,66 +2,56 @@
 
 .features {
     font-family: "Barlow";
-    margin: 80px auto;
-    width: 100%;
+    margin: 40px auto;
+    max-width: 600px; /* Add a maximum width for better mobile experience */
 }
-
 
 .features h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 24px; /* Reduce the font size for mobile devices */
 }
 
 .features li {
-    width: 250px;
+    width: 100%; /* Take the full width of the container */
     background-color: white;
     transition: .3s;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0px 0px 50px 2px #ddd;
+    margin-bottom: 10px; /* Add some space between list items */
 }
 
-.features #blue li:hover {
+.features #blue li:hover,
+.features #green li:hover,
+.features #purple li:hover,
+.features #red li:hover,
+.features #orange li:hover {
     transition: .3s;
     box-shadow: 0px 0px 100px 2px rgb(84, 89, 233);
     transform: scale(1.09);
 }
 
-.features #green li:hover {
-    transition: .3s;
-    box-shadow: 0px 0px 100px 2px rgb(80, 233, 106);
-    transform: scale(1.09);
-}
-
-.features #purple li:hover {
-    transition: .3s;
-    box-shadow: 0px 0px 100px 2px rgb(139, 80, 233);
-    transform: scale(1.09);
-}
-
-.features #red li:hover {
-    transition: .3s;
-    box-shadow: 0px 0px 100px 2px rgb(233, 80, 80);
-    transform: scale(1.09);
-}
-
-.features #orange li:hover {
-    transition: .3s;
-    box-shadow: 0px 0px 100px 2px rgb(233, 172, 80);
-    transform: scale(1.09);
-}
-
 .features ul {
     list-style-type: none;
-    justify-content: space-evenly;
-    display: flex;
-    margin: 80px auto;
+    padding: 0; /* Remove default padding */
 }
 
 .features p {
     text-align: center;
 }
 
+/* Add media query for mobile devices */
+@media (max-width: 600px) {
+    .features {
+        margin: 20px auto;
+    }
 
+    .features h1 {
+        font-size: 20px;
+    }
 
+    .features li {
+        padding: 8px;
+    }
+}
