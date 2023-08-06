@@ -7,37 +7,48 @@
     <link rel="stylesheet" href="assets/css/index.css" type="text/css">
     <link rel="icon" href="assets/images/favicon.png">
     <title>Images - LB42 OS</title>
-</head>
+    <style>
+        /* Özel stil kodları buraya gelecek */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
 
+        .kutu {
+            width: 100%;
+            max-width: 400px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            border: 2px solid #ddd; 
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .resim {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
 <header>
     <div class="full-width">
         <div class="navigation-bar">
-            <ul>
-                <li>
-                <ul>
-                        <li><a href="index.html"><i class="fa-solid fa-house"></i>Ana sayfa</a></li>
-                        <li><a href="team.html"><i class="fa-solid fa-address-card"></i>Takımımız</a></li>
-
-                        <li><a href="contacts.html"><i class="fa-solid fa-envelope"></i>İletişim</a></li>
-                    </ul>
-                </li>
-                <li><h1>LB42</h1><span><img src="assets/images/archlogo.png" alt=""></span></li>
-                <li>
-                    <ul>
-                        <li><a href="features.html"><i class="fa-solid fa-wand-magic-sparkles"></i>Özellikler</a></li>
-                        <li><a href="images.html"><i class="fa-solid fa-images"></i>Görseller</a></li>
-                        <li><a href="versions.html"><i class="fa-solid fa-download"></i>İndir</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <!-- Navigasyon çubuğu içeriği buraya gelecek, değişiklik yapmayın -->
         </div>
     </div>
-
 </header>
-
 <body>
-
- <div class="kutu">
+    
+    <div class="kutu">
         <img class="resim" src="resim1.jpg" alt="Resim 1">
     </div>
     <div class="kutu">
@@ -49,11 +60,6 @@
     <div class="kutu">
         <img class="resim" src="resim4.jpg" alt="Resim 4">
     </div>
-    
-
-    
-    
     <script src="https://kit.fontawesome.com/55460c171b.js" crossorigin="anonymous"></script>
 </body>
-
 </html>
