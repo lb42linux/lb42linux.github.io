@@ -1,42 +1,11 @@
-/* Diğer CSS kodları burada olsun */
+/* Reset default styles */
+body {
+    margin: 0;
+    padding: 0;
+}
 
 .features {
-    font-family: "Barlow";
-    margin: 40px auto;
-    max-width: 600px;
-    min-height: 500px; 
-    overflow-y: auto; /* Değişiklik: Mobil cihazda kaydırma çubuğunu kaldır ve gerektiğinde görünür yap */
-}
-
-.features h1 {
     text-align: center;
-    font-size: 24px; /* Reduce the font size for mobile devices */
-}
-
-.features li {
-    width: 100%; /* Take the full width of the container */
-    background-color: white;
-    transition: .3s;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0px 0px 50px 2px #ddd;
-    margin-bottom: 10px; /* Add some space between list items */
-}
-
-.features #blue li:hover,
-.features #green li:hover,
-.features #purple li:hover,
-.features #red li:hover,
-.features #orange li:hover {
-    transition: .3s;
-    box-shadow: 0px 0px 100px 2px rgb(84, 89, 233);
-    transform: scale(1.09);
-}
-
-.features ul {
-    list-style-type: none;
-    padding: 0; /* Remove default padding */
 }
 
 .features p {
@@ -45,9 +14,15 @@
 
 /* Add media query for mobile devices */
 @media (max-width: 600px) {
+    body {
+        overflow-x: hidden; /* Yatay kaydırmayı engelle */
+    }
+
     .features {
         margin: 20px auto;
-        height: auto; /* Değişiklik: Yükseklik otomatik olarak ayarlanacak */
+        height: auto;
+        overflow-y: scroll; /* Dikey kaydırmayı aktif et */
+        max-height: calc(100vh - 100px); /* Ekran yüksekliğine göre maksimum yükseklik belirle */
     }
 
     .features h1 {
