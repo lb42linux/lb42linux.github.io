@@ -5,9 +5,10 @@
     font-family: "Barlow";
     margin: 40px auto;
     max-width: 600px;
-    height: 400px; /* Ayarlanabilir yükseklik */
-    overflow-y: scroll; /* Yalnızca dikey yönde kaydırma çubuğunu göster */
+    min-height: 500px; 
+    overflow-y: scroll; 
 }
+
 
 
 .features h1 {
