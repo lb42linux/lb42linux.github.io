@@ -17,7 +17,7 @@
 }
 
 .navigation-bar li {
-    margin: auto 15px; /* Mobil için kenar boşluğunu azaltın */
+    margin: auto 15px;
 }
 
 .navigation-bar h1 {
@@ -29,7 +29,7 @@
 }
 
 .navigation-bar img {
-    height: 40px; /* Daha küçük görüntü boyutları */
+    height: 40px; 
     width: 40px;
     margin-right: 10px;
     display: inline-flex;
@@ -58,14 +58,14 @@
 }
 
 .center-container h1 {
-    margin: 30px auto; /* Mobil için kenar boşluğunu artırın */
+    margin: 30px auto; 
     text-align: center;
     color: #303030;
     font-family: "Barlow";
 }
 
 .center-container p {
-    margin: 0 auto; /* Mobil için negatif kenar boşluğunu kaldırın */
+    margin: 0 auto;
     font-size: 20px;
     text-align: center;
     color: #303030;
@@ -76,12 +76,12 @@
     justify-content: center;
     display: flex;
     list-style-type: none;
-    margin: 30px auto; /* Mobil için kenar boşluğunu artırın */
+    margin: 30px auto; 
 }
 
 .center-container li {
     transition: .2s;
-    margin: auto 15px; /* Mobil için kenar boşluğunu azaltın */
+    margin: auto 15px;
 }
 
 .center-container a {
@@ -101,7 +101,7 @@
     margin-right: 5px;
 }
 
-/* Mobil için özel stiller */
+
 @media only screen and (max-width: 768px) {
     .navigation-bar ul {
         flex-direction: column;
@@ -112,16 +112,16 @@
     }
 
     .center-container h1 {
-        margin: 20px auto; /* Mobil için kenar boşluğunu artırın */
-        font-size: 24px; /* Mobil için yazı tipi boyutunu ayarlayın */
+        margin: 20px auto; 
+        font-size: 24px; 
     }
 
     .center-container p {
-        font-size: 16px; /* Mobil için yazı tipi boyutunu ayarlayın */
+        font-size: 16px; 
     }
 
     .center-container ul {
-        margin: 20px auto; /* Mobil için kenar boşluğunu artırın */
+        margin: 20px auto; 
     }
 
     .center-container li {
