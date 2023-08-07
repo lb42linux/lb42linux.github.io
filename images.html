@@ -8,7 +8,27 @@
     <link rel="stylesheet" href="assets/css/$b.css" type="text/css">
     <link rel="icon" href="assets/images/favicon.png">
     <title>Team - LB42 OS</title>
-   <style>
+  <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll(".gallery img");
+            images.forEach(image => {
+                image.addEventListener("click", () => {
+                    if (image.classList.contains("enlarged")) {
+                        image.style.width = "100%";
+                        image.style.height = "100%";
+                    } else {
+                        image.style.width = "400px"; 
+                        image.style.height = "400px"; 
+                    }
+                    image.classList.toggle("enlarged");
+                });
+            });
+        });
+    </script>
+    
+    
+    
+    <style>
 
       body {
   margin: 0;
