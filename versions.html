@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+       <script>
+        
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        
+        if (isMobile) {
+            
+            alert("İndirme sayfası sadece bilgisayarlar için mevcuttur. Lütfen bilgisayardan giriş yapınız.");
+        
+            
+            setTimeout(() => {
+
+                window.location.href = "index.html";
+            }, 1000);
+        }
+
+
+    
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/$a.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
