@@ -10,25 +10,23 @@
    
    <style>
    
- body {
+body {
   margin: 0;
   padding: 0;
-  min-height: 100vh; /* Minimum sayfa yüksekliği ekran yüksekliği kadar olacak */
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 .gallery {
-  flex: 1; /* Galeri divi tüm boşluğu kaplayacak şekilde genişletilir */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
   max-width: 600px;
-  margin: 0 auto;
   padding: 10px;
-  justify-content: center; /* Resimleri yatayda ortala */
-  align-items: center; /* Resimleri dikeyde ortala */
 }
 
 .gallery img {
