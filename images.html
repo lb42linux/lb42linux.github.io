@@ -13,9 +13,13 @@
  body {
   margin: 0;
   padding: 0;
+  min-height: 100vh; /* Minimum sayfa yüksekliği ekran yüksekliği kadar olacak */
+  display: flex;
+  flex-direction: column;
 }
 
 .gallery {
+  flex: 1; /* Galeri divi tüm boşluğu kaplayacak şekilde genişletilir */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -47,6 +51,7 @@
     max-width: 300px;
   }
 }
+
    
    </style>
     
