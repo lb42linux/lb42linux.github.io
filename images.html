@@ -10,39 +10,43 @@
     <title>Team - LB42 OS</title>
    <style>
 
-       body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
+      body {
+  margin: 0;
+  padding: 0;
+}
 
-    .container {
-      max-width: 100%;
-      padding: 10px;
-      box-sizing: border-box;
-    }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  justify-content: center; /* Resimleri yatayda ortala */
+  align-items: center; /* Resimleri dikeyde ortala */
+}
 
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 20px;
-    }
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-    .column {
-      flex: 1;
-      padding: 10px;
-      max-width: 50%;
-    }
+/* Ekstra: Resimlere kenarlık eklemek için */
+.gallery img {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
 
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-
+/* Ekstra: Galeri elemanlarının uygun boyutta kalmasını sağlamak için */
+@media screen and (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    max-width: 300px;
+  }
+}
 
        
        
@@ -79,26 +83,13 @@
 </header>
 
 <body>
-
-    <div class="container">
-    <div class="row">
-      <div class="column">
-        <img src="ss1.jpg" alt="Resim 1">
-      </div>
-      <div class="column">
-        <img src="ss2.jpg" alt="Resim 2">
-      </div>
-    </div>
-    <div class="row">
-      <div class="column">
-        <img src="ss3.jpg" alt="Resim 3">
-      </div>
-      <div class="column">
-        <img src="ss4.png" alt="Resim 4">
-      </div>
-    </div>
+  <div class="gallery">
+    <img src="resim1.jpg" alt="Resim 1">
+    <img src="resim2.jpg" alt="Resim 2">
+    <img src="resim3.jpg" alt="Resim 3">
+    <img src="resim4.jpg" alt="Resim 4">
   </div>
-    
+  
     <script src="https://kit.fontawesome.com/55460c171b.js" crossorigin="anonymous"></script>
 </body>
 
